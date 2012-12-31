@@ -2,7 +2,7 @@
 
 class contact_model extends CI_Model {
 	
-	public function getContactRow()
+	public function getContactRowAsArray()
 	{
 		$query = $this->db->select('*')->from('contact')->where('id',1)->get();
 		
@@ -12,7 +12,10 @@ class contact_model extends CI_Model {
 								'address'	=> $query->row()->address,
 								'phone'		=> $query->row()->phone,
 								'fax'		=> $query->row()->fax,
-								'email'		=> $query->row()->email
+								'email'		=> $query->row()->email,
+								'facebook'	=> $query->row()->facebook,
+								'twitter'	=> $query->row()->twitter,
+								'gplus'		=> $query->row()->gplus
 							  );
 			return $row_array;				  
 		}
@@ -24,13 +27,16 @@ class contact_model extends CI_Model {
 	}
 	
 	
-	public function updateContact($address, $phone, $fax, $email)
+	public function updateContact($address, $phone, $fax, $email, $facebook, $twitter, $gplus)
 	{
 		$data = array(
 						'address' 	=> $address,
 						'phone'		=> $phone,
 						'fax'		=> $fax,
-						'$email'	=> $email
+						'email'	=> $email,
+						'facebook'	=> $facebook,
+						'twitter'	=> $twitter,
+						'gplus'		=> $gplus
 					 );
 		
 		$query = $this->db->where('id',1);
