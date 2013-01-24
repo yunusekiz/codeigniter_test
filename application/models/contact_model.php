@@ -25,6 +25,20 @@ class contact_model extends CI_Model {
 		}
 		
 	}
+
+	public function getContactRowForView()
+	{
+		$query = $this->db->select('*')->from('contact_view_alias')->where('id',1)->get();
+		if($query->num_rows()>0)
+		{
+			$result = $query->result_array();
+			return $result;
+		}
+		else
+		{
+			return FALSE;
+		}
+	}
 	
 	
 	public function updateContact($address, $phone, $fax, $email, $facebook, $twitter, $gplus)
@@ -33,7 +47,7 @@ class contact_model extends CI_Model {
 						'address' 	=> $address,
 						'phone'		=> $phone,
 						'fax'		=> $fax,
-						'email'	=> $email,
+						'email'		=> $email,
 						'facebook'	=> $facebook,
 						'twitter'	=> $twitter,
 						'gplus'		=> $gplus

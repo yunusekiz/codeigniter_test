@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "frontend/anasayfa";
+$route['default_controller'] = "tr/anasayfa";
 $route['404_override'] = 'pagenotfound';
 
 

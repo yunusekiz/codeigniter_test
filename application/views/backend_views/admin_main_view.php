@@ -11,7 +11,7 @@
 			<div id="profile-links">
 
 				<br />
-				<a href="#" title="Şifremi Değiştir" style="color:#9F6">Şifremi Değiştir</a> |
+				<a href="{base}backend/pass/changePass" title="Şifremi Değiştir" style="color:#9F6">Şifremi Değiştir</a> |
                 <a href="#" title="Oturumu Kapat" style="color:#F00" data-reveal-id="myModal">Oturumu Kapat</a>
 			</div>        
 			

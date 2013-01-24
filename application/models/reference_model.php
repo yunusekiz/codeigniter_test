@@ -14,9 +14,9 @@ class reference_model extends CI_Model {
 					);
 		
 		$query = $this->db->insert('reference_category',$data);
-		$this->last_category_id = $this->db->insert_id();
 		if($query)
 		{
+			$this->last_category_id = $this->db->insert_id();
 			return TRUE;
 		}
 		else
@@ -47,9 +47,9 @@ class reference_model extends CI_Model {
 					 );
 	
 		$query = $this->db->insert('reference_text_field',$data);
-		$this->last_reference_id = $this->db->insert_id();
 		if($query)
 		{
+			$this->last_reference_id = $this->db->insert_id();
 			return TRUE;
 		}
 		else

@@ -3,7 +3,15 @@ class pagenotfound extends CI_Controller {
 
 	function index()
 	{
-		$this->load->view('404/404_page.php');
+		$base = base_url();
+		
+		$parser_data = array(
+								'base' => $base
+							);
+		
+		$this->parser->parse('404/404_view',$parser_data);
+		
+		//$this->load->view('404/404_view');
 	}
 
 }

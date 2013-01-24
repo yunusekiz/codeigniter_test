@@ -46,6 +46,7 @@ class datee extends CI_Controller {
 		$this->parser->parse('denek',$data);
 		
 		
+
 /*		$name = 'ornek_kategori_2';
 		
 		$id = $this->kayit_gir->getRefCategoryId($name);

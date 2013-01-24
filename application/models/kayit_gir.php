@@ -147,4 +147,6 @@ class kayit_gir extends CI_Model {
 		$result = $query->result_array();
 		return $result;
 	}
+	
+
 }	

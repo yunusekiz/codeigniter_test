@@ -2,12 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>hakk</title>
 </head>
 
 <body>
-
-<h1> merhaba ben sitenin anasayfasıyım -_- </h1>
+{base}
+</br>
+{hakkimizda_kayitlari}
+</br>
+{hakkimizda}
+</br>
+{vizyonumuz}
+</br>
+{misyonumuz}
+</br>
+{/hakkimizda_kayitlari}
 
 
 </body>

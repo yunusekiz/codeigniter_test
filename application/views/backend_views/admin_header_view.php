@@ -69,5 +69,19 @@
 				DD_belatedPNG.fix('.png_bg, img, li');
 			</script>
 		<![endif]-->
+
+
+		 <!--                       Jquery Notification Assets               -->
+		<link rel="stylesheet" type="text/css" href="{base}assets/login_assets/notification_css/jquery_notification.css" />
+
+		<script type="text/javascript" src="{base}assets/login_assets/notification_js/jquery_v_1.4.js"></script>
+		<script type="text/javascript" src="{base}assets/login_assets/notification_js/jquery_notification_v.1.js"></script>
+
+		<script type="text/javascript">
+     		$(document).ready(function(){
+       			 });
+		</script>
+		<!--                       Jquery Notification Assets               /-->
+
 </head>
 <body>

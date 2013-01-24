@@ -2,8 +2,15 @@
 
 class anasayfa extends CI_Controller {
 	
+	public function __construct()
+	{
+		parent::__construct();
+	}
+	
 	public function index(){
-		$this->load->view('frontend/anasayfa_view');
+
+		$this->load->view('frontend_views/tr/anasayfa_view');
+
 		}
 	
-	}
+}

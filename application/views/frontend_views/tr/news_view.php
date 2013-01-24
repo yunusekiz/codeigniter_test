@@ -2,13 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>haberler</title>
 </head>
 
 <body>
 
-<h2> merhaba, ben sitenin hakkımızda sayfasıyım... </h2>
+{haber_detaylari}
 
+<br>
 
+{haber_tarihi}
+
+<br>
+
+{haber_detayi}
+
+<br>
+
+{/haber_detaylari}
+<br>
 </body>
 </html>
